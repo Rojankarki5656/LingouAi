@@ -13,10 +13,15 @@ const waitlistRoutes = require("./src/routes/waitlistRoute");
 const app = express();
 
 app.use(cors({
-  origin: config.CORS_ORIGIN,
+  origin: [
+    "https://detectorai.me",
+    "http://detectorai.me",
+    "http://localhost:3000"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
+  credentials: true
 }));
+
 
 const port = config.PORT;
 app.use(express.json());

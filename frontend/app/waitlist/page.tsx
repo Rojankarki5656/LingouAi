@@ -21,7 +21,7 @@ export default function WaitlistPage() {
 
     try {
       // Send request to your backend API
-      const response = await fetch("http://159.223.46.87:9000/api/v1/waitlist/join", {
+      const response = await fetch("/api/v1/waitlist/join", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -301,5 +301,7 @@ export default function WaitlistPage() {
         </div>
       </footer>
     </div>
+
+    
   )
 }

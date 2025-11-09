@@ -45,7 +45,7 @@ export default function ComingSoonPage() {
         if (!email) return
         try {
             // Send request to your backend API
-            const response = await fetch("http://localhost:9000/api/v1/waitlist/join", {
+            const response = await fetch("/api/v1/waitlist/join", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email }),
