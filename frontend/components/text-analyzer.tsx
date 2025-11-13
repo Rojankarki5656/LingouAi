@@ -146,7 +146,7 @@ export default function TextAnalyzer({ text, onTextChange, selectedOptions, onOp
 
   return (
     <div className="space-y-4">
-      <div className="card-premium">
+      <div className="card-premium bg-[radial-gradient(circle_at_top_left,_#f8fafc_0%,_#f4fdf4_60%,_#ffffff_100%)] backdrop-blur-xl supports-[backdrop-filter]:bg-[#060b13]/50">
 
         {!isAuthenticated ? (
           <>
@@ -215,7 +215,7 @@ export default function TextAnalyzer({ text, onTextChange, selectedOptions, onOp
             <button
               onClick={handleAnalyze}
               disabled={!text.trim() || isAnalyzing || activeOptions.length === 0}
-              className="px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 transition-colors"
+              className="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg hover:shadow-blue-600/30 transition-all rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 transition-colors"
             >
               {isAnalyzing ? (
                 <>

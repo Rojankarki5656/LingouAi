@@ -10,24 +10,24 @@ export const metadata = {
     "LinguoAI is your intelligent writing companion powered by advanced AI — refine grammar, enhance tone, and perfect your writing with professional-level precision.",
   keywords:
     "AI writing assistant, grammar checker, tone corrector, sentence rewriter, AI grammar tool, LinguoAI, Grammarly alternative, text improvement, professional writing, content enhancement, ai detctor, ai detetcor, ai-detector, dectecor ai, writing assistant, grammar correction, tone improvement, style enhancement, essay writing, email writing, creative writing, text analysis, ai writing tool, ai content checker, ai content detector, ai text detector, ai text checker, ai writing detector, ai writing checker, ai content analysis, ai text analysis, ai writing analysis, ai grammar analysis, ai tone analysis, ai style analysis, ai writing enhancement",
-  authors: [{ name: "LinguoAI Team", url: "https://linguoai.com" }],
+  authors: [{ name: "LinguoAI Team", url: "https://detectorai.me" }],
   creator: "LinguoAI",
   publisher: "LinguoAI",
-  metadataBase: new URL("https://linguoai.com"),
+  metadataBase: new URL("https://detectorai.me"),
   alternates: {
-    canonical: "https://linguoai.com",
+    canonical: "https://detectorai.me",
   },
   openGraph: {
     title: "LinguoAI — AI Writing Assistant for Perfect Grammar & Tone",
     description:
       "Boost your writing with LinguoAI. Correct grammar, improve tone, and elevate your content using powerful AI-driven technology.",
-    url: "https://linguoai.com",
+    url: "https://detectorai.me",
     siteName: "LinguoAI",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://linguoai.com/og-image.jpg",
+        url: "https://detectorai.me/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "LinguoAI - Premium Writing Assistant",
@@ -41,7 +41,7 @@ export const metadata = {
     title: "LinguoAI — AI Writing Assistant for Perfect Grammar & Tone",
     description:
       "Polish your writing instantly with LinguoAI. AI-powered grammar, tone, and clarity enhancements made easy.",
-    images: ["https://linguoai.com/twitter-card.jpg"],
+    images: ["https://detectorai.me/twitter-card.jpg"],
   },
   robots: {
     index: true,
@@ -69,7 +69,7 @@ export default function RootLayout({
         <meta name="author" content="LinguoAI Team" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="canonical" href="https://linguoai.com" />
+        <link rel="canonical" href="https://detectorai.me" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -77,8 +77,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "LinguoAI",
-              url: "https://linguoai.com",
-              logo: "https://linguoai.com/logo.png",
+              url: "https://detectorai.me",
+              logo: "https://detectorai.me/logo.png",
               sameAs: [
                 "https://twitter.com/linguoai",
                 "https://linkedin.com/company/linguoai",
