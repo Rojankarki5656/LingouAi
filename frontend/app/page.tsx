@@ -170,6 +170,7 @@ export default function Home() {
           offers: {
             "@type": "Offer",
             priceCurrency: "USD",
+            priceValidUntil: "2025-12-31",
             price: "0.00",
             url: "https://detectorai.me/pricing",
             availability: "https://schema.org/InStock",
@@ -242,6 +243,7 @@ export default function Home() {
             "@type": "Offer",
             priceCurrency: "USD",
             price: "0.00",
+            priceValidUntil: "2025-12-31",
             url: "https://detectorai.me/pricing",
             availability: "https://schema.org/InStock"
           }

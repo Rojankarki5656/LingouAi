@@ -1,12 +1,17 @@
 import type React from "react"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://detectorai.me"
 
-export const metadata = {
-  title:
-    "LinguoAI — Best AI Writing Assistant for Grammar, Tone, and Clarity | AI Grammar Checker, Sentence Rewriter, and Style Enhancer",
+export const metadata: Metadata = {
+  title: {
+    default:
+      "LinguoAI — Best AI Writing Assistant for Grammar, Tone, and Clarity",
+    template: "%s | LinguoAI",
+  },
   description:
     "LinguoAI is a premium AI writing assistant that refines grammar, enhances tone, and perfects writing clarity. Powered by cutting-edge natural language AI, it’s ideal for students, professionals, and content creators. Write flawless essays, blogs, and emails with precision and confidence.",
   keywords:
@@ -14,7 +19,7 @@ export const metadata = {
   authors: [{ name: "LinguoAI Team", url: "https://detectorai.me" }],
   creator: "LinguoAI",
   publisher: "LinguoAI",
-  metadataBase: new URL("https://detectorai.me"),
+  metadataBase: new URL(SITE_URL),
   alternates: { canonical: "https://detectorai.me" },
   openGraph: {
     title:
@@ -66,10 +71,6 @@ export const metadata = {
     "AI writing assistant, grammar correction tool, tone and clarity improvement software, AI content detection",
   applicationName: "LinguoAI - Premium AI Writing Assistant",
   referrer: "origin-when-cross-origin",
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
-    bing: "YOUR_BING_VERIFICATION_CODE",
-  },
 }
 
 export default function RootLayout({
@@ -86,7 +87,6 @@ export default function RootLayout({
         <meta name="author" content="LinguoAI Team" />
         <link rel="icon" href="/logo.png" sizes="any" />
         <link rel="apple-touch-icon" href="/logo.png" />
-        <link rel="canonical" href="https://detectorai.me" />
 
         {/* 🔹 Rich JSON-LD Schema */}
         <script
